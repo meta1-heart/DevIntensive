@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/auth_parent_linear">
+    <LinearLayout
+        style="@style/auth_child_linear">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_small_24"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="@dimen/line_size"
+                android:layout_height="wrap_content"
+                android:background="@color/red_auth"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auth_enter_tv"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/red_auth"
+                android:layout_marginLeft="@dimen/spacing_medial_24"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_medial_24">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_normal_16">
+                <EditText
+                    android:id="@+id/email_login_et"
+                    android:hint="@string/e_mail_hint"
+                    android:text="@string/email_default"
+                    android:inputType="textEmailAddress"
+                    style="@style/auth_edittext">
+                    <requestFocus></requestFocus>
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/password_et"
+                    android:hint="@string/auth_password_hint"
+                    android:inputType="textPassword"
+                    style="@style/auth_edittext"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/login_btn"
+                android:background="@color/red_auth"
+                android:text="@string/auth_button_enter"
+                android:textColor="@color/white"
+                style="@style/auth_buttons"/>
+            <TextView
+                android:id="@+id/forgot_tv"
+                android:text="@string/auth_password_hint_tv"
+                android:textColor="@color/gray_light"
+                style="@style/auth_buttons"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
