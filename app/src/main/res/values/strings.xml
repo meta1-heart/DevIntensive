@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Николай Бородин</string>
+    <string name="user_profile_placeholder.image">Изменить фотографию профиля</string>
+    <string name="user_profile.dialog.gallery">Загрузить из галлереи</string>
+    <string name="user_profile.dialog.camera">Сделать снимок</string>
+    <string name="user_profile.dialog.cancel">Отмена</string>
+    <string name="user_profile.dialog.title">Изменить фотографию профиля</string>
+    <string name="user_profile.chose.message">выберите фото</string>
+    <string name="auth_enter_tv">ВОЙТИ</string>
+    <string name="e_mail_hint">E-Mail</string>
+    <string name="email_default">Hello@world.com</string>
+    <string name="auth_password_hint">Пароль</string>
+    <string name="auth_button_enter">ВОЙТИ</string>
+    <string name="auth_password_hint_tv">Забыли пароль?</string>
 </resources>
